@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Omar Awad</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Omar Awad</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/First_photo.jpg" alt="Omar Awad profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Omar Awad</h1>
+      <p class="section__text__p2">Security engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://linkedin.com/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/Third_photo.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Customer Service Advisor at Concentrix, Dec 2024 - Mar 2025</p>
+            <p>Internship at Arab Bank, Oct 2024 – Dec 2024</p>
+            <p>Internship at Future Advanced Internet Solutions Co, Jul 2024 – Sep 2024 </p>
+            <p>Training at National Cyber Security Center of Jordan Jul 2024 – Sep 2024 </p>
+
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>MBA in Artificial Intelligence from Talal Abu-Ghazaleh Global Digital University,
+              expected Graduation: Jan 2026 </p>
+            <p>Bachelor's Degree in Cybersecurity from Amman Arab University 2021 – 2024
+              GPA: 3.7/4.0 </p>
+
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Aspiring cybersecurity professional with a passion for technology and a commitment to lifelong learning, with a focus on foundational skills and career development. I bring a strong analytical mindset, problem-solving abilities, and a proactive approach to self-improvement and skill-building. My goal is to contribute to a dynamic team where I can continue to grow and apply my cybersecurity knowledge to real-world challenges.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Skills'" />
+  </section>
+  <section id="Skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="Skills-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="Skills-sub-title"></h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Python/C++/SQL</h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Linux line command </h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Virtualization</h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Vulnerability scanning</h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Bash scripting </h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Password hashing & cracking</h3>
+                <p></p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="Skills-sub-title"></h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Network Security & controls</h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Network monitoring & analysis</h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>SIEM Tools</h3>
+                <p></p>
+              </div>
+            </article>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Frameworks & Controls NIST - CSF</h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Packet Sniffers</h3>
+                <p></p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="certificates">
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="certificate" class="card left-card" data-aos="fade-left" data-aos-duration="1000"
+          data-aos-offset="50">
+          <h3>Google Cybersecurity Professional Certificate (Coursera,Google)</h3>
+          <a href="https://coursera.org/share/dacfef26ebdfa4f5178463caa15775f3" target="_blank" class="cert-link-text">
+            Click to view credentials
+          </a>
+
+        </div>
+        <span class="year" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="50">2025</span>
+      <!--</div>
+       <div class="timeline-item right">
+        <div class="certificate" class="card left-card" data-aos="fade-right" data-aos-duration="1000"
+          data-aos-offset="50">
+          <h3>OOP in java Specialization (duke&UC san diego University,Coursera) </h3>
+          <a href="https://coursera.org/share/6fa81efdcbf2c470858fadcf925d7ed5" target="_blank" class="cert-link-text">
+            Click to view credentials
+          </a>
+        </div>
+        <span class="year" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="50">2025</span>
+      </div> 
+      </div>-->
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:omarthaerawad@gmail.com">omarthaerawad@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/omar-awad-937922231/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Omar Awad. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
